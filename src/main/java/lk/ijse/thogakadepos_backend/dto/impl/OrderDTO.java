@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,5 +16,6 @@ public class OrderDTO implements SuperDTO {
     private String orderId;
     private Date orderDate;
     private String customerId;
+    private List<ItemDTO> orderedItems;
 
 }
