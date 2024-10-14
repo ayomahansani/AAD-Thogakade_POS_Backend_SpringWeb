@@ -16,6 +16,6 @@ public class OrderDetailsDTO implements SuperDTO {
     private double discount;
     private double subTotal;
     private String orderId;
-    private String ItemCode;
+    private String itemCode;
 
 }
