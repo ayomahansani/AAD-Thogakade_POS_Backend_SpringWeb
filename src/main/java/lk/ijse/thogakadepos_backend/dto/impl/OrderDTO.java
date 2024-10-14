@@ -15,8 +15,8 @@ import java.util.List;
 public class OrderDTO implements SuperDTO {
 
     private String orderId;
-    private LocalDate orderDate;
     @JsonFormat(pattern = "yyyy-MM-dd")
+    private LocalDate orderDate;
     private String customerId;
     private List<ItemDTO> orderedItems;
 
