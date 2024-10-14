@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 @AllArgsConstructor
@@ -18,7 +18,7 @@ public class OrderEntity implements SuperEntity {
 
     @Id
     private String orderId;
-    private Date orderDate;
+    private LocalDate orderDate;
 
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
