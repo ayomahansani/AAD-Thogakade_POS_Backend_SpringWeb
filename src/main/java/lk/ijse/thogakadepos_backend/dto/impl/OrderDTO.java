@@ -7,7 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
-import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -18,6 +17,5 @@ public class OrderDTO implements SuperDTO {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate orderDate;
     private String customerId;
-    private List<ItemDTO> orderedItems;
 
 }
