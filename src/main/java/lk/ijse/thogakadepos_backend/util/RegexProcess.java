@@ -16,5 +16,10 @@ public class RegexProcess {
         return regexPattern.matcher(itemCode).matches();
     }
 
+    public static boolean orderIdMatcher(String orderId){
+        String regexForOrderId = "^O\\d{3}$";
+        Pattern regexPattern = Pattern.compile(regexForOrderId);
+        return regexPattern.matcher(orderId).matches();
+    }
 
 }

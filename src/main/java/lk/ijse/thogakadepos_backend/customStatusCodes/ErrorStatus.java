@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class CustomerAndItemErrorStatus implements CustomerStatus, ItemStatus {
+public class ErrorStatus implements CustomerStatus, ItemStatus {
     private int statusCode;
     private String statusMessage;
 }

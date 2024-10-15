@@ -4,6 +4,7 @@ import lk.ijse.thogakadepos_backend.dto.impl.ItemDTO;
 import lk.ijse.thogakadepos_backend.exception.DataPersistException;
 import lk.ijse.thogakadepos_backend.exception.ItemNotFoundException;
 import lk.ijse.thogakadepos_backend.service.ItemService;
+import lk.ijse.thogakadepos_backend.util.RegexProcess;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -25,8 +26,9 @@ public class ItemController {
     public ResponseEntity<Void> saveItem(@RequestBody ItemDTO itemDTO){
 
         try{
-            itemService.saveItem(itemDTO);
-            return new ResponseEntity<>(HttpStatus.CREATED);
+            if(RegexProcess.customerIdMatcher(itemDTO.getCode())){
+                itemService.saveItem(itemDTO);
+            }
         } catch (DataPersistException e){
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
@@ -35,6 +37,7 @@ public class ItemController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
 
@@ -43,8 +46,9 @@ public class ItemController {
     public ResponseEntity<Void> updateItem(@PathVariable ("itemId") String itemId, @RequestBody ItemDTO itemDTO){
 
         try{
-            itemService.updateItem(itemId, itemDTO);
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            if(RegexProcess.customerIdMatcher(itemId)){
+                itemService.updateItem(itemId, itemDTO);
+            }
         } catch (ItemNotFoundException e){
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -53,6 +57,7 @@ public class ItemController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
 
@@ -61,8 +66,9 @@ public class ItemController {
     public ResponseEntity<Void> deleteItem(@PathVariable ("itemId") String itemId){
 
         try{
-            itemService.deleteItem(itemId);
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            if(RegexProcess.customerIdMatcher(itemId)){
+                itemService.deleteItem(itemId);
+            }
         } catch (ItemNotFoundException e){
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -71,6 +77,7 @@ public class ItemController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
 
