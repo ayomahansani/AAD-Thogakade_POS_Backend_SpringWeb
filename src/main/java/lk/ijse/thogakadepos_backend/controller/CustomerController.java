@@ -4,6 +4,7 @@ import lk.ijse.thogakadepos_backend.dto.impl.CustomerDTO;
 import lk.ijse.thogakadepos_backend.exception.CustomerNotFoundException;
 import lk.ijse.thogakadepos_backend.exception.DataPersistException;
 import lk.ijse.thogakadepos_backend.service.CustomerService;
+import lk.ijse.thogakadepos_backend.util.RegexProcess;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -25,8 +26,9 @@ public class CustomerController {
     public ResponseEntity<Void> saveCustomer(@RequestBody CustomerDTO customerDTO){
 
         try{
-            customerService.saveCustomer(customerDTO);
-            return new ResponseEntity<>(HttpStatus.CREATED);
+            if(RegexProcess.customerIdMatcher(customerDTO.getId())){
+                customerService.saveCustomer(customerDTO);
+            }
         } catch (DataPersistException e){
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
@@ -35,6 +37,7 @@ public class CustomerController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
 
@@ -43,8 +46,9 @@ public class CustomerController {
     public ResponseEntity<Void> updateCustomer(@PathVariable ("customerId") String customerId, @RequestBody CustomerDTO customerDTO){
 
         try{
-            customerService.updateCustomer(customerId, customerDTO);
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            if(RegexProcess.customerIdMatcher(customerId)){
+                customerService.updateCustomer(customerId, customerDTO);
+            }
         } catch (CustomerNotFoundException e){
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -53,6 +57,7 @@ public class CustomerController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
 
@@ -61,8 +66,9 @@ public class CustomerController {
     public ResponseEntity<Void> deleteCustomer(@PathVariable ("customerId") String customerId){
 
         try{
-            customerService.deleteCustomer(customerId);
-            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+            if(RegexProcess.customerIdMatcher(customerId)){
+                customerService.deleteCustomer(customerId);
+            }
         } catch (CustomerNotFoundException e){
             e.printStackTrace();
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
@@ -71,6 +77,7 @@ public class CustomerController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
 
