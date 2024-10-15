@@ -51,7 +51,7 @@ public class OrderDetailsController {
 
     // ----------- GET SELECTED ORDER DETAILS -----------
     @GetMapping("/{orderId}")
-    public ResponseEntity<List<OrderDetailsDTO>> getOrderDetails(@PathVariable String orderId) {
+    public ResponseEntity<List<OrderDetailsDTO>> getOrderDetails(@PathVariable ("orderId") String orderId) {
         List<OrderDetailsDTO> details = orderDetailsService.getOrderDetailsByOrderId(orderId);
         return new ResponseEntity<>(details, HttpStatus.OK);
     }
