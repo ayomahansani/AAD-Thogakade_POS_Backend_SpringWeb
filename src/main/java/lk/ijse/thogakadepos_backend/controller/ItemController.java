@@ -32,7 +32,7 @@ public class ItemController {
 
         try{
             logger.info("The Request is received to save item : {}", itemDTO.getCode());
-            if(RegexProcess.customerIdMatcher(itemDTO.getCode())){
+            if(RegexProcess.itemCodeMatcher(itemDTO.getCode())){
                 itemService.saveItem(itemDTO);
                 logger.info("Item {} saved successfully", itemDTO.getCode());
             }
@@ -54,7 +54,7 @@ public class ItemController {
 
         try{
             logger.info("The Request is received to update item : {}", itemId);
-            if(!RegexProcess.customerIdMatcher(itemId) || itemDTO == null){
+            if(!RegexProcess.itemCodeMatcher(itemId) || itemDTO == null){
                 logger.warn("Invalid input data for item update");
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
@@ -78,7 +78,7 @@ public class ItemController {
 
         try{
             logger.info("The Request is received to delete item : {}", itemId);
-            if(!RegexProcess.customerIdMatcher(itemId)){
+            if(!RegexProcess.itemCodeMatcher(itemId)){
                 logger.warn("Invalid item ID: {}", itemId);
                 return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }

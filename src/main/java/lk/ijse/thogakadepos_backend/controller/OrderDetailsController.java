@@ -1,6 +1,5 @@
 package lk.ijse.thogakadepos_backend.controller;
 
-import lk.ijse.thogakadepos_backend.dto.impl.OrderDTO;
 import lk.ijse.thogakadepos_backend.dto.impl.OrderDetailsDTO;
 import lk.ijse.thogakadepos_backend.exception.DataPersistException;
 import lk.ijse.thogakadepos_backend.service.OrderDetailsService;
