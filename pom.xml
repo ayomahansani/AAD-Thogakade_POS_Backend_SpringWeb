@@ -97,6 +97,20 @@
           <version>3.2.1</version>
       </dependency>
 
+      <!-- LogBack - to trace back the errors, status -->
+      <dependency>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+          <version>1.5.7</version>
+      </dependency>
+
+      <!-- SLF4J - the basic structure of logs dependencies -->
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>2.0.16</version>
+      </dependency>
+
   </dependencies>
 
   <build>

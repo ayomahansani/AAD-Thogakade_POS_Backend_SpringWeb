@@ -5,6 +5,7 @@ import lk.ijse.thogakadepos_backend.exception.CustomerNotFoundException;
 import lk.ijse.thogakadepos_backend.exception.DataPersistException;
 import lk.ijse.thogakadepos_backend.service.CustomerService;
 import lk.ijse.thogakadepos_backend.util.RegexProcess;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
