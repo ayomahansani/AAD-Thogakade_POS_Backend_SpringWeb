@@ -5,6 +5,7 @@ import lk.ijse.thogakadepos_backend.exception.CustomerNotFoundException;
 import lk.ijse.thogakadepos_backend.exception.DataPersistException;
 import lk.ijse.thogakadepos_backend.service.CustomerService;
 import lk.ijse.thogakadepos_backend.util.RegexProcess;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,6 +20,8 @@ import java.util.List;
 @CrossOrigin
 public class CustomerController {
 
+    private static final Logger logger = LoggerFactory.getLogger(CustomerController.class);
+
     @Autowired
     private CustomerService customerService;
 
@@ -27,14 +30,16 @@ public class CustomerController {
     public ResponseEntity<Void> saveCustomer(@RequestBody CustomerDTO customerDTO){
 
         try{
+            logger.info("The Request is received to save customer : {}", customerDTO.getId());
             if(RegexProcess.customerIdMatcher(customerDTO.getId())){
                 customerService.saveCustomer(customerDTO);
+                logger.info("Customer {} saved successfully", customerDTO.getId());
             }
         } catch (DataPersistException e){
-            e.printStackTrace();
+            logger.error("Failed to save customer: {}", e.getMessage());
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Internal server error while saving customer : {}", e.getMessage());
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
@@ -47,14 +52,18 @@ public class CustomerController {
     public ResponseEntity<Void> updateCustomer(@PathVariable ("customerId") String customerId, @RequestBody CustomerDTO customerDTO){
 
         try{
-            if(RegexProcess.customerIdMatcher(customerId)){
-                customerService.updateCustomer(customerId, customerDTO);
+            logger.info("The Request is received to update customer : {}", customerId);
+            if(!RegexProcess.customerIdMatcher(customerId) || customerDTO == null){
+                logger.warn("Invalid input data for customer update");
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
+            customerService.updateCustomer(customerId, customerDTO);
+            logger.info("Customer {} updated successfully", customerId);
         } catch (CustomerNotFoundException e){
-            e.printStackTrace();
+            logger.error("Customer not found for ID: {}", customerId);
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } catch (Exception e){
-            e.printStackTrace();
+            logger.error("Internal server error while updating customer : {}", e.getMessage());
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
@@ -67,14 +76,18 @@ public class CustomerController {
     public ResponseEntity<Void> deleteCustomer(@PathVariable ("customerId") String customerId){
 
         try{
-            if(RegexProcess.customerIdMatcher(customerId)){
-                customerService.deleteCustomer(customerId);
+            logger.info("The Request is received to delete customer : {}", customerId);
+            if(!RegexProcess.customerIdMatcher(customerId)){
+                logger.warn("Invalid customer ID: {}", customerId);
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
+            customerService.deleteCustomer(customerId);
+            logger.info("Customer {} deleted successfully", customerId);
         } catch (CustomerNotFoundException e){
-            e.printStackTrace();
+            logger.error("Customer not found for ID: {}", customerId);
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } catch (Exception e){
-            e.printStackTrace();
+            logger.error("Internal server error while deleting customer : {}", e.getMessage());
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
@@ -85,7 +98,10 @@ public class CustomerController {
     // ----------- GET ALL CUSTOMERS -----------
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<CustomerDTO> getAllCustomers(){
-        return customerService.getAllCustomers();
+        logger.info("The Request is received to get all customers");
+        List<CustomerDTO> allCustomers = customerService.getAllCustomers();
+        logger.info("All customers retrieved: {}", allCustomers.size());
+        return allCustomers;
     }
 
 
