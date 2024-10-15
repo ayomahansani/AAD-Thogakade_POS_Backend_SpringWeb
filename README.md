@@ -1,5 +1,5 @@
 
-# THOGAKADE  POS  BACKEND  API - (Spring version)
+# THOGAKADE   POS   BACKEND   API - (Spring version)
 
 This project is a backend API for a Point of Sale (POS) system for a retail shop(thogakade). It enables the management of customers, items, orders and order details. Built with Spring and utilizing a MySQL database for data storage, this API provides a robust solution for retail environments.
 
@@ -35,14 +35,15 @@ This project is a backend API for a Point of Sale (POS) system for a retail shop
 1. Clone the repository
 - Frontend - https://github.com/ayomahansani/AAD-Thogakade_POS_Frontend_SpringWeb.git
 - Backend - https://github.com/ayomahansani/AAD-Thogakade_POS_Backend_SpringWeb.git
-2. Set up the MySQL database and configure the application properties for database connection.
-3. Run the Spring  application.
+2. Set up the MySQL database of the backend project and configure the application properties for database connection.
+3. Run the Spring application (AppInit class).
+4. Run the index.html file of the frontend project.
 
 ## API Documentation
 
 For comprehensive API documentation, please refer to the following link:
 
-[API Documentation](https://documenter.getpostman.com/view/36195888/2sAXxTcB6o)
+
 
 ## Database Structure
 
