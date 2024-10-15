@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Define the file appender to write logs in another file -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+
+        <!-- Define the log file location -->
+        <file>/Users/ayomahansani/Documents/AAD/Spring/Final Assignment  based on Spring Web/thogakade-POS_Backend/app.log</file> <!-- app.log ekata gihin right click karala copy absolute pathe reference-->
+
+        <!-- Define how logs should be rolled -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Daily rollover -->
+            <fileNamePattern>logs/app-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- Keep 30 days of logs -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+
+        <!-- Define the log output pattern -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Use FILE appender as the default appender for all logs -->
+    <root level="info">
+        <appender-ref ref="FILE" />
+    </root>
+
+</configuration>
