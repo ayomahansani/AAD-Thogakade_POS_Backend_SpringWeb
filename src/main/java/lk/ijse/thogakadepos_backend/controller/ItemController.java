@@ -5,6 +5,8 @@ import lk.ijse.thogakadepos_backend.exception.DataPersistException;
 import lk.ijse.thogakadepos_backend.exception.ItemNotFoundException;
 import lk.ijse.thogakadepos_backend.service.ItemService;
 import lk.ijse.thogakadepos_backend.util.RegexProcess;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -18,22 +20,27 @@ import java.util.List;
 @CrossOrigin
 public class ItemController {
 
+    private static final Logger logger = LoggerFactory.getLogger(ItemController.class);
+
     @Autowired
     private ItemService itemService;
+
 
     // ----------- SAVE ITEM -----------
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Void> saveItem(@RequestBody ItemDTO itemDTO){
 
         try{
+            logger.info("The Request is received to save item : {}", itemDTO.getCode());
             if(RegexProcess.customerIdMatcher(itemDTO.getCode())){
                 itemService.saveItem(itemDTO);
+                logger.info("Item {} saved successfully", itemDTO.getCode());
             }
         } catch (DataPersistException e){
-            e.printStackTrace();
+            logger.error("Failed to save item: {}", e.getMessage());
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Internal server error while saving item : {}", e.getMessage());
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
@@ -46,14 +53,18 @@ public class ItemController {
     public ResponseEntity<Void> updateItem(@PathVariable ("itemId") String itemId, @RequestBody ItemDTO itemDTO){
 
         try{
-            if(RegexProcess.customerIdMatcher(itemId)){
-                itemService.updateItem(itemId, itemDTO);
+            logger.info("The Request is received to update item : {}", itemId);
+            if(!RegexProcess.customerIdMatcher(itemId) || itemDTO == null){
+                logger.warn("Invalid input data for item update");
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
+            itemService.updateItem(itemId, itemDTO);
+            logger.info("Item {} updated successfully", itemId);
         } catch (ItemNotFoundException e){
-            e.printStackTrace();
+            logger.error("Item not found for ID: {}", itemId);
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } catch (Exception e){
-            e.printStackTrace();
+            logger.error("Internal server error while updating item : {}", e.getMessage());
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
@@ -66,14 +77,18 @@ public class ItemController {
     public ResponseEntity<Void> deleteItem(@PathVariable ("itemId") String itemId){
 
         try{
-            if(RegexProcess.customerIdMatcher(itemId)){
-                itemService.deleteItem(itemId);
+            logger.info("The Request is received to delete item : {}", itemId);
+            if(!RegexProcess.customerIdMatcher(itemId)){
+                logger.warn("Invalid item ID: {}", itemId);
+                return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
             }
+            itemService.deleteItem(itemId);
+            logger.info("Item {} deleted successfully", itemId);
         } catch (ItemNotFoundException e){
-            e.printStackTrace();
+            logger.error("Item not found for ID: {}", itemId);
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         } catch (Exception e){
-            e.printStackTrace();
+            logger.error("Internal server error while deleting item : {}", e.getMessage());
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
@@ -84,8 +99,10 @@ public class ItemController {
     // ----------- GET ALL ITEM -----------
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<ItemDTO> getAllItems(){
-
-        return itemService.getAllItems();
+        logger.info("The Request is received to get all items");
+        List<ItemDTO> allItems = itemService.getAllItems();
+        logger.info("All items retrieved: {}", allItems.size());
+        return allItems;
     }
 
 }

@@ -1,0 +1,35 @@
+2024-10-15 13:39:12 - Root WebApplicationContext: initialization started
+2024-10-15 13:39:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-15 13:39:12 - Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2024-10-15 13:39:13 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-15 13:39:13 - HHH000412: Hibernate ORM core version 6.6.0.Final
+2024-10-15 13:39:13 - HHH000026: Second-level cache disabled
+2024-10-15 13:39:13 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-15 13:39:13 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasourcenull]
+	Database driver: undefined/unknown
+	Database version: 8.0.32
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-10-15 13:39:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-15 13:39:14 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-15 13:39:14 - Root WebApplicationContext initialized in 2125 ms
+2024-10-15 13:39:14 - Initializing Servlet 'dispatcher'
+2024-10-15 13:39:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-15 13:39:14 - Finished Spring Data repository scanning in 4 ms. Found 4 JPA repository interfaces.
+2024-10-15 13:39:14 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-15 13:39:14 - HHH000026: Second-level cache disabled
+2024-10-15 13:39:14 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-15 13:39:14 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasourcenull]
+	Database driver: undefined/unknown
+	Database version: 8.0.32
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-10-15 13:39:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-15 13:39:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-15 13:39:15 - Completed initialization in 181 ms
