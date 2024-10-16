@@ -1,7 +1,7 @@
 
 # THOGAKADE   POS   BACKEND   API - (Spring version)
 
-This project is a backend API for a Point of Sale (POS) system for a retail shop(thogakade). It enables the management of customers, items, orders and order details. Built with Spring and utilizing a MySQL database for data storage, this API provides a robust solution for retail environments.
+This project is a backend RESTful API for a Point of Sale (POS) system for a retail shop(thogakade). It enables the management of customers, items, orders and order details. Built with Spring and utilizing a MySQL database for data storage, this API provides a robust solution for retail environments.
 
 ## Table of Contents
 
@@ -43,7 +43,7 @@ This project is a backend API for a Point of Sale (POS) system for a retail shop
 
 For comprehensive API documentation, please refer to the following link:
 
-
+https://documenter.getpostman.com/view/36189266/2sAXxV4pJf
 
 ## Database Structure
 

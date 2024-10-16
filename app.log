@@ -1,11 +1,13 @@
-2024-10-15 13:39:12 - Root WebApplicationContext: initialization started
-2024-10-15 13:39:12 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-15 13:39:12 - Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
-2024-10-15 13:39:13 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-15 13:39:13 - HHH000412: Hibernate ORM core version 6.6.0.Final
-2024-10-15 13:39:13 - HHH000026: Second-level cache disabled
-2024-10-15 13:39:13 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-15 13:39:13 - HHH10001005: Database info:
+2024-10-16 09:12:46 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 09:12:46 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 09:12:53 - Root WebApplicationContext: initialization started
+2024-10-16 09:12:53 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 09:12:53 - Finished Spring Data repository scanning in 27 ms. Found 4 JPA repository interfaces.
+2024-10-16 09:12:53 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 09:12:53 - HHH000412: Hibernate ORM core version 6.6.0.Final
+2024-10-16 09:12:53 - HHH000026: Second-level cache disabled
+2024-10-16 09:12:53 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 09:12:53 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasourcenull]
 	Database driver: undefined/unknown
 	Database version: 8.0.32
@@ -13,16 +15,16 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2024-10-15 13:39:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-15 13:39:14 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 13:39:14 - Root WebApplicationContext initialized in 2125 ms
-2024-10-15 13:39:14 - Initializing Servlet 'dispatcher'
-2024-10-15 13:39:14 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-15 13:39:14 - Finished Spring Data repository scanning in 4 ms. Found 4 JPA repository interfaces.
-2024-10-15 13:39:14 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-15 13:39:14 - HHH000026: Second-level cache disabled
-2024-10-15 13:39:14 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-15 13:39:14 - HHH10001005: Database info:
+2024-10-16 09:12:54 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 09:12:54 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 09:12:55 - Root WebApplicationContext initialized in 2165 ms
+2024-10-16 09:12:55 - Initializing Servlet 'dispatcher'
+2024-10-16 09:12:55 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 09:12:55 - Finished Spring Data repository scanning in 5 ms. Found 4 JPA repository interfaces.
+2024-10-16 09:12:55 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 09:12:55 - HHH000026: Second-level cache disabled
+2024-10-16 09:12:55 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 09:12:55 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasourcenull]
 	Database driver: undefined/unknown
 	Database version: 8.0.32
@@ -30,411 +32,90 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2024-10-15 13:39:14 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-15 13:39:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 13:39:15 - Completed initialization in 181 ms
-2024-10-15 15:18:46 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 15:18:46 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 15:18:54 - Root WebApplicationContext: initialization started
-2024-10-15 15:18:54 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-15 15:18:54 - Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
-2024-10-15 15:18:54 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-15 15:18:54 - HHH000412: Hibernate ORM core version 6.6.0.Final
-2024-10-15 15:18:54 - HHH000026: Second-level cache disabled
-2024-10-15 15:18:54 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-15 15:18:55 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasourcenull]
-	Database driver: undefined/unknown
-	Database version: 8.0.32
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2024-10-15 15:18:55 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-15 15:18:55 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 15:18:56 - Root WebApplicationContext initialized in 2173 ms
-2024-10-15 15:18:56 - Initializing Servlet 'dispatcher'
-2024-10-15 15:18:56 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-15 15:18:56 - Finished Spring Data repository scanning in 4 ms. Found 4 JPA repository interfaces.
-2024-10-15 15:18:56 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-15 15:18:56 - HHH000026: Second-level cache disabled
-2024-10-15 15:18:56 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-15 15:18:56 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasourcenull]
-	Database driver: undefined/unknown
-	Database version: 8.0.32
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2024-10-15 15:18:56 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-15 15:18:56 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 15:18:56 - Completed initialization in 179 ms
-2024-10-15 15:19:12 - The Request is received to get all items
-2024-10-15 15:19:12 - The Request is received to get all customers
-2024-10-15 15:19:12 - The Request is received to get all orders
-2024-10-15 15:19:12 - All customers retrieved: 2
-2024-10-15 15:19:12 - All items retrieved: 2
-2024-10-15 15:19:12 - All orders retrieved: 2
-2024-10-15 15:19:12 - The Request is received to get all customers
-2024-10-15 15:19:12 - The Request is received to get all items
-2024-10-15 15:19:12 - The Request is received to get all orders
-2024-10-15 15:19:12 - All items retrieved: 2
-2024-10-15 15:19:12 - All orders retrieved: 2
-2024-10-15 15:19:12 - The Request is received to get all items
-2024-10-15 15:19:12 - All customers retrieved: 2
-2024-10-15 15:19:12 - The Request is received to get all orders
-2024-10-15 15:19:12 - The Request is received to get all customers
-2024-10-15 15:19:12 - All items retrieved: 2
-2024-10-15 15:19:12 - All orders retrieved: 2
-2024-10-15 15:19:12 - All customers retrieved: 2
-2024-10-15 15:19:12 - The Request is received to get order detail by ID: O001
-2024-10-15 15:19:12 - The Request is received to get order detail by ID: O002
-2024-10-15 15:19:12 - Order Item Detail with ID O001 retrieved
-2024-10-15 15:19:12 - Order Item Detail with ID O002 retrieved
-2024-10-15 15:19:34 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 15:19:34 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 15:19:44 - Root WebApplicationContext: initialization started
-2024-10-15 15:19:44 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-15 15:19:44 - Finished Spring Data repository scanning in 27 ms. Found 4 JPA repository interfaces.
-2024-10-15 15:19:44 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-15 15:19:44 - HHH000412: Hibernate ORM core version 6.6.0.Final
-2024-10-15 15:19:44 - HHH000026: Second-level cache disabled
-2024-10-15 15:19:44 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-15 15:19:45 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasourcenull]
-	Database driver: undefined/unknown
-	Database version: 8.0.32
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2024-10-15 15:19:45 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-15 15:19:45 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 15:19:46 - Root WebApplicationContext initialized in 2167 ms
-2024-10-15 15:19:46 - Initializing Servlet 'dispatcher'
-2024-10-15 15:19:46 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-15 15:19:46 - Finished Spring Data repository scanning in 5 ms. Found 4 JPA repository interfaces.
-2024-10-15 15:19:46 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-15 15:19:46 - HHH000026: Second-level cache disabled
-2024-10-15 15:19:46 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-15 15:19:46 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasourcenull]
-	Database driver: undefined/unknown
-	Database version: 8.0.32
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2024-10-15 15:19:46 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-15 15:19:46 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 15:19:46 - Completed initialization in 180 ms
-2024-10-15 15:20:00 - The Request is received to get all customers
-2024-10-15 15:20:00 - The Request is received to get all orders
-2024-10-15 15:20:00 - The Request is received to get all items
-2024-10-15 15:20:00 - All orders retrieved: 0
-2024-10-15 15:20:00 - All items retrieved: 0
-2024-10-15 15:20:00 - All customers retrieved: 0
-2024-10-15 15:20:00 - The Request is received to get all items
-2024-10-15 15:20:00 - The Request is received to get all customers
-2024-10-15 15:20:00 - The Request is received to get all orders
-2024-10-15 15:20:00 - All customers retrieved: 0
-2024-10-15 15:20:00 - All orders retrieved: 0
-2024-10-15 15:20:00 - All items retrieved: 0
-2024-10-15 15:20:00 - The Request is received to get all orders
-2024-10-15 15:20:00 - The Request is received to get all customers
-2024-10-15 15:20:00 - The Request is received to get all items
-2024-10-15 15:20:00 - All orders retrieved: 0
-2024-10-15 15:20:00 - All customers retrieved: 0
-2024-10-15 15:20:00 - All items retrieved: 0
-2024-10-15 15:20:25 - The Request is received to get all customers
-2024-10-15 15:20:25 - All customers retrieved: 0
-2024-10-15 15:20:25 - The Request is received to save customer : C001
-2024-10-15 15:20:25 - Customer C001 saved successfully
-2024-10-15 15:20:25 - The Request is received to get all customers
-2024-10-15 15:20:25 - All customers retrieved: 1
-2024-10-15 15:20:25 - The Request is received to get all customers
-2024-10-15 15:20:25 - All customers retrieved: 1
-2024-10-15 15:20:32 - The Request is received to get all customers
-2024-10-15 15:20:32 - All customers retrieved: 1
-2024-10-15 15:20:32 - The Request is received to save customer : C002
-2024-10-15 15:20:32 - Customer C002 saved successfully
-2024-10-15 15:20:32 - The Request is received to get all customers
-2024-10-15 15:20:32 - All customers retrieved: 2
-2024-10-15 15:20:32 - The Request is received to get all customers
-2024-10-15 15:20:32 - All customers retrieved: 2
-2024-10-15 15:20:36 - The Request is received to get all items
-2024-10-15 15:20:36 - The Request is received to get all customers
-2024-10-15 15:20:36 - The Request is received to get all orders
-2024-10-15 15:20:36 - All items retrieved: 0
-2024-10-15 15:20:36 - All orders retrieved: 0
-2024-10-15 15:20:36 - All customers retrieved: 2
-2024-10-15 15:20:47 - The Request is received to get all items
-2024-10-15 15:20:47 - All items retrieved: 0
-2024-10-15 15:20:55 - The Request is received to get all items
-2024-10-15 15:20:55 - All items retrieved: 0
-2024-10-15 15:20:55 - The Request is received to save item : I001
-2024-10-15 15:20:55 - The Request is received to get all items
-2024-10-15 15:20:55 - All items retrieved: 0
-2024-10-15 15:20:55 - The Request is received to get all items
-2024-10-15 15:20:55 - All items retrieved: 0
-2024-10-15 15:23:39 - The Request is received to get all items
-2024-10-15 15:23:39 - All items retrieved: 0
-2024-10-15 15:23:39 - The Request is received to save item : I001
-2024-10-15 15:23:39 - The Request is received to get all items
-2024-10-15 15:23:39 - All items retrieved: 0
-2024-10-15 15:23:39 - The Request is received to get all items
-2024-10-15 15:23:39 - All items retrieved: 0
-2024-10-15 15:26:51 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 15:26:51 - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 15:26:58 - Root WebApplicationContext: initialization started
-2024-10-15 15:26:58 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-15 15:26:58 - Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
-2024-10-15 15:26:58 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-15 15:26:58 - HHH000412: Hibernate ORM core version 6.6.0.Final
-2024-10-15 15:26:58 - HHH000026: Second-level cache disabled
-2024-10-15 15:26:59 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-15 15:26:59 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasourcenull]
-	Database driver: undefined/unknown
-	Database version: 8.0.32
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2024-10-15 15:27:00 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-15 15:27:00 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 15:27:00 - Root WebApplicationContext initialized in 2179 ms
-2024-10-15 15:27:00 - Initializing Servlet 'dispatcher'
-2024-10-15 15:27:00 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-10-15 15:27:00 - Finished Spring Data repository scanning in 4 ms. Found 4 JPA repository interfaces.
-2024-10-15 15:27:00 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-10-15 15:27:00 - HHH000026: Second-level cache disabled
-2024-10-15 15:27:00 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-10-15 15:27:00 - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasourcenull]
-	Database driver: undefined/unknown
-	Database version: 8.0.32
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2024-10-15 15:27:00 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-10-15 15:27:00 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-10-15 15:27:00 - Completed initialization in 180 ms
-2024-10-15 15:27:11 - The Request is received to get all orders
-2024-10-15 15:27:11 - The Request is received to get all items
-2024-10-15 15:27:11 - The Request is received to get all customers
-2024-10-15 15:27:11 - All customers retrieved: 0
-2024-10-15 15:27:11 - All orders retrieved: 0
-2024-10-15 15:27:11 - All items retrieved: 0
-2024-10-15 15:27:11 - The Request is received to get all items
-2024-10-15 15:27:11 - The Request is received to get all orders
-2024-10-15 15:27:11 - The Request is received to get all customers
-2024-10-15 15:27:11 - All orders retrieved: 0
-2024-10-15 15:27:11 - All items retrieved: 0
-2024-10-15 15:27:11 - All customers retrieved: 0
-2024-10-15 15:27:11 - The Request is received to get all customers
-2024-10-15 15:27:11 - The Request is received to get all items
-2024-10-15 15:27:11 - The Request is received to get all orders
-2024-10-15 15:27:11 - All items retrieved: 0
-2024-10-15 15:27:11 - All orders retrieved: 0
-2024-10-15 15:27:11 - All customers retrieved: 0
-2024-10-15 15:27:19 - The Request is received to get all customers
-2024-10-15 15:27:19 - All customers retrieved: 0
-2024-10-15 15:27:19 - The Request is received to save customer : C001
-2024-10-15 15:27:19 - Customer C001 saved successfully
-2024-10-15 15:27:19 - The Request is received to get all customers
-2024-10-15 15:27:19 - All customers retrieved: 1
-2024-10-15 15:27:19 - The Request is received to get all customers
-2024-10-15 15:27:19 - All customers retrieved: 1
-2024-10-15 15:27:30 - The Request is received to get all customers
-2024-10-15 15:27:30 - All customers retrieved: 1
-2024-10-15 15:27:30 - The Request is received to save customer : C002
-2024-10-15 15:27:30 - Customer C002 saved successfully
-2024-10-15 15:27:30 - The Request is received to get all customers
-2024-10-15 15:27:30 - All customers retrieved: 2
-2024-10-15 15:27:30 - The Request is received to get all customers
-2024-10-15 15:27:30 - All customers retrieved: 2
-2024-10-15 15:27:36 - The Request is received to get all items
-2024-10-15 15:27:36 - The Request is received to get all orders
-2024-10-15 15:27:36 - The Request is received to get all customers
-2024-10-15 15:27:36 - All items retrieved: 0
-2024-10-15 15:27:36 - All orders retrieved: 0
-2024-10-15 15:27:36 - All customers retrieved: 2
-2024-10-15 15:28:19 - The Request is received to update customer : C001
-2024-10-15 15:28:19 - Customer C001 updated successfully
-2024-10-15 15:28:19 - The Request is received to get all customers
-2024-10-15 15:28:19 - All customers retrieved: 2
-2024-10-15 15:28:19 - The Request is received to get all customers
-2024-10-15 15:28:19 - All customers retrieved: 2
-2024-10-15 15:28:37 - The Request is received to update customer : C002
-2024-10-15 15:28:37 - Customer C002 updated successfully
-2024-10-15 15:28:37 - The Request is received to get all customers
-2024-10-15 15:28:37 - All customers retrieved: 2
-2024-10-15 15:28:37 - The Request is received to get all customers
-2024-10-15 15:28:37 - All customers retrieved: 2
-2024-10-15 15:28:47 - The Request is received to get all customers
-2024-10-15 15:28:47 - All customers retrieved: 2
-2024-10-15 15:28:58 - The Request is received to get all customers
-2024-10-15 15:28:58 - All customers retrieved: 2
-2024-10-15 15:29:02 - The Request is received to get all customers
-2024-10-15 15:29:02 - All customers retrieved: 2
-2024-10-15 15:29:06 - The Request is received to get all customers
-2024-10-15 15:29:06 - All customers retrieved: 2
-2024-10-15 15:29:11 - The Request is received to get all customers
-2024-10-15 15:29:11 - All customers retrieved: 2
-2024-10-15 15:29:17 - The Request is received to get all items
-2024-10-15 15:29:17 - All items retrieved: 0
-2024-10-15 15:29:25 - The Request is received to get all items
-2024-10-15 15:29:25 - All items retrieved: 0
-2024-10-15 15:29:25 - The Request is received to save item : I001
-2024-10-15 15:29:25 - Item I001 saved successfully
-2024-10-15 15:29:25 - The Request is received to get all items
-2024-10-15 15:29:25 - All items retrieved: 1
-2024-10-15 15:29:25 - The Request is received to get all items
-2024-10-15 15:29:25 - All items retrieved: 1
-2024-10-15 15:29:40 - The Request is received to get all items
-2024-10-15 15:29:40 - All items retrieved: 1
-2024-10-15 15:29:40 - The Request is received to save item : I002
-2024-10-15 15:29:40 - Item I002 saved successfully
-2024-10-15 15:29:40 - The Request is received to get all items
-2024-10-15 15:29:41 - All items retrieved: 2
-2024-10-15 15:29:41 - The Request is received to get all items
-2024-10-15 15:29:41 - All items retrieved: 2
-2024-10-15 15:29:44 - The Request is received to get all customers
-2024-10-15 15:29:44 - The Request is received to get all items
-2024-10-15 15:29:44 - The Request is received to get all orders
-2024-10-15 15:29:44 - All orders retrieved: 0
-2024-10-15 15:29:44 - All items retrieved: 2
-2024-10-15 15:29:44 - All customers retrieved: 2
-2024-10-15 15:29:48 - The Request is received to get all items
-2024-10-15 15:29:48 - All items retrieved: 2
-2024-10-15 15:29:49 - The Request is received to get all items
-2024-10-15 15:29:49 - All items retrieved: 2
-2024-10-15 15:30:09 - The Request is received to update item : I001
-2024-10-15 15:30:10 - Item I001 updated successfully
-2024-10-15 15:30:10 - The Request is received to get all items
-2024-10-15 15:30:10 - All items retrieved: 2
-2024-10-15 15:30:10 - The Request is received to get all items
-2024-10-15 15:30:10 - All items retrieved: 2
-2024-10-15 15:30:26 - The Request is received to update item : I002
-2024-10-15 15:30:26 - Item I002 updated successfully
-2024-10-15 15:30:26 - The Request is received to get all items
-2024-10-15 15:30:26 - All items retrieved: 2
-2024-10-15 15:30:26 - The Request is received to get all items
-2024-10-15 15:30:26 - All items retrieved: 2
-2024-10-15 15:30:45 - The Request is received to get all items
-2024-10-15 15:30:45 - All items retrieved: 2
-2024-10-15 15:30:54 - The Request is received to get all items
-2024-10-15 15:30:54 - All items retrieved: 2
-2024-10-15 15:31:01 - The Request is received to get all items
-2024-10-15 15:31:01 - All items retrieved: 2
-2024-10-15 15:31:07 - The Request is received to get all items
-2024-10-15 15:31:07 - All items retrieved: 2
-2024-10-15 15:32:11 - The Request is received to get all items
-2024-10-15 15:32:11 - The Request is received to get all customers
-2024-10-15 15:32:11 - The Request is received to get all orders
-2024-10-15 15:32:11 - All orders retrieved: 0
-2024-10-15 15:32:11 - All items retrieved: 2
-2024-10-15 15:32:11 - All customers retrieved: 2
-2024-10-15 15:32:15 - The Request is received to get all customers
-2024-10-15 15:32:15 - All customers retrieved: 2
-2024-10-15 15:32:18 - The Request is received to get all items
-2024-10-15 15:32:18 - All items retrieved: 2
-2024-10-15 15:32:22 - The Request is received to get all items
-2024-10-15 15:32:22 - All items retrieved: 2
-2024-10-15 15:32:29 - The Request is received to get all items
-2024-10-15 15:32:29 - All items retrieved: 2
-2024-10-15 15:32:32 - The Request is received to get all items
-2024-10-15 15:32:32 - All items retrieved: 2
-2024-10-15 15:32:44 - The Request is received to save order : O001
-2024-10-15 15:32:45 - Order O001 saved successfully
-2024-10-15 15:32:45 - The Request is received to get all items
-2024-10-15 15:32:45 - The Request is received to get all customers
-2024-10-15 15:32:45 - The Request is received to get all orders
-2024-10-15 15:32:45 - The Request is received to save order item detail
-2024-10-15 15:32:45 - The Request is received to save order item detail
-2024-10-15 15:32:45 - All items retrieved: 2
-2024-10-15 15:32:45 - The Request is received to get all items
-2024-10-15 15:32:45 - The Request is received to update item : I001
-2024-10-15 15:32:45 - All orders retrieved: 1
-2024-10-15 15:32:45 - All items retrieved: 2
-2024-10-15 15:32:45 - The Request is received to get all items
-2024-10-15 15:32:45 - All customers retrieved: 2
-2024-10-15 15:32:45 - The Request is received to update item : I002
-2024-10-15 15:32:45 - Item I001 updated successfully
-2024-10-15 15:32:45 - Order Item Detail OrderDetailsDTO(transactionId=TRANSACTION-afeeb591-3b45-4381-a040-53f3979c6550, totalPrice=1000.0, discount=0.0, subTotal=1000.0, orderId=O001, itemCode=I001) saved successfully
-2024-10-15 15:32:45 - Order Item Detail OrderDetailsDTO(transactionId=TRANSACTION-d308a9fa-d886-43e1-822f-812ce071e857, totalPrice=1000.0, discount=0.0, subTotal=1000.0, orderId=O001, itemCode=I002) saved successfully
-2024-10-15 15:32:45 - All items retrieved: 2
-2024-10-15 15:32:45 - Item I002 updated successfully
-2024-10-15 15:32:45 - The Request is received to get all items
-2024-10-15 15:32:45 - All items retrieved: 2
-2024-10-15 15:32:51 - The Request is received to get all orders
-2024-10-15 15:32:51 - All orders retrieved: 1
-2024-10-15 15:32:51 - The Request is received to get order detail by ID: O001
-2024-10-15 15:32:51 - Order Item Detail with ID O001 retrieved
-2024-10-15 15:33:19 - The Request is received to get all items
-2024-10-15 15:33:19 - All items retrieved: 2
-2024-10-15 15:33:20 - The Request is received to get all customers
-2024-10-15 15:33:20 - The Request is received to get all items
-2024-10-15 15:33:20 - The Request is received to get all orders
-2024-10-15 15:33:20 - All items retrieved: 2
-2024-10-15 15:33:20 - All orders retrieved: 1
-2024-10-15 15:33:20 - All customers retrieved: 2
-2024-10-15 15:33:20 - The Request is received to get order detail by ID: O001
-2024-10-15 15:33:20 - Order Item Detail with ID O001 retrieved
-2024-10-15 15:33:22 - The Request is received to get all orders
-2024-10-15 15:33:22 - All orders retrieved: 1
-2024-10-15 15:33:22 - The Request is received to get order detail by ID: O001
-2024-10-15 15:33:22 - Order Item Detail with ID O001 retrieved
-2024-10-15 15:33:44 - The Request is received to get all customers
-2024-10-15 15:33:44 - All customers retrieved: 2
-2024-10-15 15:33:46 - The Request is received to get all items
-2024-10-15 15:33:46 - All items retrieved: 2
-2024-10-15 15:33:49 - The Request is received to get all items
-2024-10-15 15:33:49 - All items retrieved: 2
-2024-10-15 15:33:57 - The Request is received to save order : O002
-2024-10-15 15:33:57 - Order O002 saved successfully
-2024-10-15 15:33:57 - The Request is received to get all items
-2024-10-15 15:33:57 - The Request is received to save order item detail
-2024-10-15 15:33:57 - The Request is received to get all customers
-2024-10-15 15:33:57 - The Request is received to get all orders
-2024-10-15 15:33:57 - All items retrieved: 2
-2024-10-15 15:33:57 - The Request is received to get all items
-2024-10-15 15:33:57 - All orders retrieved: 2
-2024-10-15 15:33:57 - Order Item Detail OrderDetailsDTO(transactionId=TRANSACTION-b8fb983a-74f6-4f24-bc1e-a7caada2326a, totalPrice=400.0, discount=0.0, subTotal=400.0, orderId=O002, itemCode=I002) saved successfully
-2024-10-15 15:33:57 - The Request is received to update item : I002
-2024-10-15 15:33:57 - All customers retrieved: 2
-2024-10-15 15:33:57 - All items retrieved: 2
-2024-10-15 15:33:57 - The Request is received to get all items
-2024-10-15 15:33:57 - Item I002 updated successfully
-2024-10-15 15:33:57 - All items retrieved: 2
-2024-10-15 15:34:01 - The Request is received to get all orders
-2024-10-15 15:34:01 - All orders retrieved: 2
-2024-10-15 15:34:01 - The Request is received to get order detail by ID: O001
-2024-10-15 15:34:01 - The Request is received to get order detail by ID: O002
-2024-10-15 15:34:01 - Order Item Detail with ID O001 retrieved
-2024-10-15 15:34:01 - Order Item Detail with ID O002 retrieved
-2024-10-15 15:34:09 - The Request is received to get all orders
-2024-10-15 15:34:09 - The Request is received to get all items
-2024-10-15 15:34:09 - The Request is received to get all customers
-2024-10-15 15:34:09 - All items retrieved: 2
-2024-10-15 15:34:09 - All orders retrieved: 2
-2024-10-15 15:34:09 - All customers retrieved: 2
-2024-10-15 15:34:10 - The Request is received to get all orders
-2024-10-15 15:34:10 - The Request is received to get all items
-2024-10-15 15:34:10 - The Request is received to get all customers
-2024-10-15 15:34:10 - All items retrieved: 2
-2024-10-15 15:34:10 - All orders retrieved: 2
-2024-10-15 15:34:10 - All customers retrieved: 2
-2024-10-15 15:34:10 - The Request is received to get order detail by ID: O001
-2024-10-15 15:34:10 - The Request is received to get order detail by ID: O002
-2024-10-15 15:34:10 - Order Item Detail with ID O001 retrieved
-2024-10-15 15:34:10 - Order Item Detail with ID O002 retrieved
-2024-10-15 15:34:13 - The Request is received to get all orders
-2024-10-15 15:34:13 - All orders retrieved: 2
-2024-10-15 15:34:13 - The Request is received to get order detail by ID: O001
-2024-10-15 15:34:13 - The Request is received to get order detail by ID: O002
-2024-10-15 15:34:13 - Order Item Detail with ID O002 retrieved
-2024-10-15 15:34:13 - Order Item Detail with ID O001 retrieved
+2024-10-16 09:12:55 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 09:12:55 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 09:12:55 - Completed initialization in 174 ms
+2024-10-16 09:13:39 - The Request is received to save customer : C003
+2024-10-16 09:13:40 - Customer C003 saved successfully
+2024-10-16 09:15:11 - The Request is received to update customer : C003
+2024-10-16 09:15:11 - Customer C003 updated successfully
+2024-10-16 09:16:18 - The Request is received to delete customer : C003
+2024-10-16 09:16:19 - Customer C003 deleted successfully
+2024-10-16 09:17:54 - The Request is received to get all customers
+2024-10-16 09:17:54 - All customers retrieved: 2
+2024-10-16 09:22:52 - The Request is received to save item : I003
+2024-10-16 09:22:52 - Item I003 saved successfully
+2024-10-16 09:23:33 - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-10-16 09:23:39 - The Request is received to update item : I003
+2024-10-16 09:23:39 - Item I003 updated successfully
+2024-10-16 09:24:09 - The Request is received to delete item : I003
+2024-10-16 09:24:09 - Item I003 deleted successfully
+2024-10-16 09:24:50 - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type is not supported]
+2024-10-16 09:24:55 - The Request is received to get all items
+2024-10-16 09:24:55 - All items retrieved: 2
+2024-10-16 09:35:35 - The Request is received to save order : O003
+2024-10-16 09:35:35 - Order O003 saved successfully
+2024-10-16 09:36:51 - The Request is received to get all orders
+2024-10-16 09:36:51 - All orders retrieved: 3
+2024-10-16 10:01:01 - The Request is received to save order item detail
+2024-10-16 10:01:01 - Internal server error while saving order item detail : Unable to find lk.ijse.thogakadepos_backend.entity.impl.ItemEntity with id I003
+2024-10-16 10:03:44 - The Request is received to save order item detail
+2024-10-16 10:03:44 - Order Item Detail OrderDetailsDTO(transactionId=TRANSACTION-c8871729-f254-469a-8ae1-6e1e572dcaf4, totalPrice=20.0, discount=0.0, subTotal=20.0, orderId=O003, itemCode=I002) saved successfully
+2024-10-16 10:04:23 - The Request is received to get all orders
+2024-10-16 10:04:23 - All orders retrieved: 3
+2024-10-16 10:04:38 - The Request is received to get all order item details
+2024-10-16 10:04:38 - All order item details retrieved: 4
+2024-10-16 10:12:07 - The Request is received to get order detail by ID: O003
+2024-10-16 10:12:07 - Order Item Detail with ID O003 retrieved
+2024-10-16 10:12:15 - The Request is received to get order detail by ID: O001
+2024-10-16 10:12:15 - Order Item Detail with ID O001 retrieved
+2024-10-16 11:20:18 - The Request is received to delete item : I003
+2024-10-16 11:20:19 - Item not found for ID: I003
+2024-10-16 11:31:49 - The Request is received to save customer : C003
+2024-10-16 11:31:49 - Customer C003 saved successfully
+2024-10-16 11:32:22 - The Request is received to get all customers
+2024-10-16 11:32:22 - All customers retrieved: 3
+2024-10-16 11:32:27 - The Request is received to delete customer : C003
+2024-10-16 11:32:27 - Customer C003 deleted successfully
+2024-10-16 11:32:43 - The Request is received to save item : I003
+2024-10-16 11:32:43 - Item I003 saved successfully
+2024-10-16 11:32:51 - The Request is received to update item : I003
+2024-10-16 11:32:51 - Item I003 updated successfully
+2024-10-16 11:33:00 - The Request is received to delete item : I003
+2024-10-16 11:33:00 - Item I003 deleted successfully
+2024-10-16 11:33:04 - The Request is received to get all items
+2024-10-16 11:33:04 - All items retrieved: 2
+2024-10-16 11:33:37 - The Request is received to save order : O004
+2024-10-16 11:33:37 - Order O004 saved successfully
+2024-10-16 11:33:44 - The Request is received to get all orders
+2024-10-16 11:33:44 - All orders retrieved: 4
+2024-10-16 11:34:22 - The Request is received to save order : O004
+2024-10-16 11:34:22 - Order O004 saved successfully
+2024-10-16 11:34:30 - The Request is received to get all orders
+2024-10-16 11:34:30 - All orders retrieved: 4
+2024-10-16 11:34:35 - The Request is received to get order detail by ID: O003
+2024-10-16 11:34:35 - Order Item Detail with ID O003 retrieved
+2024-10-16 11:43:00 - The Request is received to save item : I003
+2024-10-16 11:43:00 - Item I003 saved successfully
+2024-10-16 11:43:08 - The Request is received to update item : I003
+2024-10-16 11:43:08 - Item I003 updated successfully
+2024-10-16 11:43:13 - The Request is received to get all items
+2024-10-16 11:43:13 - All items retrieved: 3
+2024-10-16 11:44:29 - The Request is received to delete item : I003
+2024-10-16 11:44:30 - Item I003 deleted successfully
+2024-10-16 11:44:33 - The Request is received to get all items
+2024-10-16 11:44:33 - All items retrieved: 2
+2024-10-16 12:28:40 - The Request is received to get all customers
+2024-10-16 12:28:40 - All customers retrieved: 2
+2024-10-16 12:31:36 - The Request is received to get all items
+2024-10-16 12:31:36 - All items retrieved: 2
+2024-10-16 12:33:16 - The Request is received to get all orders
+2024-10-16 12:33:16 - All orders retrieved: 4
+2024-10-16 12:33:52 - The Request is received to get all orders
+2024-10-16 12:33:52 - All orders retrieved: 4
+2024-10-16 12:34:43 - The Request is received to save order item detail
+2024-10-16 12:34:43 - Internal server error while saving order item detail : Unable to find lk.ijse.thogakadepos_backend.entity.impl.ItemEntity with id I003
+2024-10-16 12:34:53 - The Request is received to get all order item details
+2024-10-16 12:34:53 - All order item details retrieved: 4
+2024-10-16 12:35:29 - The Request is received to get order detail by ID: O003
+2024-10-16 12:35:29 - Order Item Detail with ID O003 retrieved
